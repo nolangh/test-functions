@@ -1,4 +1,5 @@
 // these functions are absolute trash and are just here to document growth and for reference
+// I came up with all each function
 
 
 //function that takes in user age and prints out a string and users aprox age
@@ -17,4 +18,60 @@ function refCom(price) {
     let afterRef = buyer - referral
     let myCut = afterRef / 2
     return 'After all deductions your compensation will be ' + myCut
+}
+
+
+// if/else functions
+function basicTeenager(age) {
+    if (age <= 19 && age >= 13) {
+        return 'You are a teenager'
+    } else {
+        return 'You are not a teenager'
+    }
+}
+//tenary function
+function ternaryTeenager(age) {
+    return age <= 19 && age >= 13 ?
+        "You are a teenager" :
+        "You are not a teenager"
+}
+
+// if/elseif/else function
+function ageChecker(age) {
+    if (age <= 19 && age >= 13) {
+        return 'You are a teenager!'
+    } else if (age <= 12) {
+        return "You are a kid"
+    } else {
+        return "You are a grownup"
+    }
+}
+
+// switch function
+function switchAge(age) {
+    switch (age) {
+        case 13:
+            return "You are a teenager"
+            break;
+        case 14:
+            return "You are a teenager"
+            break;
+        case 15:
+            return "You are a teenager"
+            break;
+        case 16:
+            return "You are a teenager"
+            break;
+        case 17:
+            return "You are a teenager"
+            break;
+        case 18:
+            return "You are a teenager"
+            break;
+        case 19:
+            return "You are a teenager"
+            break;
+        default:
+            return "You have an age"
+    }
 }
