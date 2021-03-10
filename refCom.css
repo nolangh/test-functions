@@ -1,5 +1,14 @@
+/*unseen css*/
+
 html {
     margin: 0;
     scroll-behavior: smooth;
     width: 100vh;
+}
+
+
+/* main body */
+
+body: {
+    background-color: #D7A8AF;
 }
