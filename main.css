@@ -28,14 +28,15 @@ body {
 
 .navCard {
     position: absolute;
+    flex-direction: row-reverse;
     display: flex;
-    width: 100px;
-    height: 200px;
+    width: 215px;
+    height: 360px;
     background-color: aquamarine;
 }
 
 
-/* ----------------------------------- Nav Hamburger ---------------------------------- */
+/* ------------------------------- nav button ------------------------------- */
 
 .menu-btn {
     position: relative;
@@ -50,6 +51,9 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+
+/* ----------------------------------- Nav Hamburger ---------------------------------- */
 
 .menu-btn_burger {
     width: 50px;
