@@ -17,21 +17,26 @@ html {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     min-height: 100vh;
     background-color: #D7A8AF;
 }
 
 
+/* ----------------------------------- Nav ---------------------------------- */
+
+
 /* --------------------------------- NavCard -------------------------------- */
 
-.navCard {
+.nav-card {
     position: absolute;
     flex-direction: row-reverse;
     display: flex;
     width: 215px;
     height: 360px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
     background-color: aquamarine;
 }
 
