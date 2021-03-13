@@ -1,19 +1,22 @@
-/* ------------------- document.querySelector('.menu-btn') selects the class menu-btn  ------------------ */
-const menuBtn = document.querySelector('.menu-btn');
-const navCard = document.querySelector('.nav-card')
-    /* ------------ This sets the class menuOpen and sets it to false ----------- */
-let menuOpen = false;
-/* ------------------- This adds event listener to menuBtn ------------------ */
-menuBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-        /* --------------- This added a class to menuBtn if it is open -------------- */
-        menuBtn.classList.add('open');
-        navCard.classList.add('open');
-        menuOpen = true;
-        /* ------------- this removes class open from menuBtn if closed ------------- */
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-        navCard.classList.remove('open');
-    }
-});
+const themeMap = {
+    dark: "light",
+    light: "solar",
+    solar: "dark"
+};
+
+const theme = localStorage.getItem('theme') ||
+    (tmp = Object.keys(themeMap)[0],
+        localStorage.setItem('theme', tmp),
+        tmp);
+const bodyClass = document.body.classList;
+bodyClass.add(theme);
+
+function toggleTheme() {
+    const current = localStorage.getItem('theme');
+    const next = themeMap[current];
+
+    bodyClass.replace(current, next);
+    localStorage.setItem('theme', next);
+}
+
+document.getElementById('themeButton').onclick = toggleTheme;
