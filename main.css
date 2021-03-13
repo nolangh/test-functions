@@ -66,6 +66,7 @@ main {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
+    transform: translateX(1rem);
 }
 
 .link-text {
@@ -153,7 +154,7 @@ main {
         height: 100vh;
     }
     .navbar:hover {
-        width: 16rem;
+        width: 15rem;
     }
     .navbar:hover .link-text {
         display: inline;
