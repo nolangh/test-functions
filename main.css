@@ -8,6 +8,9 @@
     --transition-speed: 600ms;
 }
 
+
+/* ------------------------------- Body------------------------------ */
+
 body {
     color: black;
     background-color: white;
@@ -26,6 +29,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
+
+
+/* ------------------------------- main------------------------------ */
 
 main {
     margin-left: 5rem;
